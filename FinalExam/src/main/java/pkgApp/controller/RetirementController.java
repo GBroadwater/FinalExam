@@ -69,6 +69,22 @@ public class RetirementController implements Initializable {
 				Double.parseDouble(RequiredIncomeField.getText()), Double.parseDouble(MonthlySSIField.getText()));
 		MonthlySavings.setText("$" + Double.toString(r.AmountToSave()));
 		TotalSavings.setText("$" + Double.toString(r.TotalAmountSaved()));
+		if (Double.parseDouble(TopAnnualReturnField.getText()) > 0.2){
+			Alert alert = new Alert(AlertType.WARNING);
+            alert.setTitle("Annual Return Error");
+            alert.setHeaderText("Annual Return unexpectingly high");
+            alert.setContentText("Working Annual Return is higher than recommended, please reconsider.");
+
+            alert.showAndWait();
+		}
+		if (Double.parseDouble(BottomAnnualReturnField.getText()) > 0.03){
+			Alert alert = new Alert(AlertType.WARNING);
+            alert.setTitle("Annual Return Error");
+            alert.setHeaderText("Annual Return unexpectingly high");
+            alert.setContentText("Retired Annual Return is higher than recommended, please reconsider.");
+
+            alert.showAndWait();
+		}
 		}
 		catch (NumberFormatException e) {
             Alert alert = new Alert(AlertType.WARNING);
