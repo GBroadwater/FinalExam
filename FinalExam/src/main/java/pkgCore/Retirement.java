@@ -71,9 +71,6 @@ public class Retirement {
 	}
 
 	public double AmountToSave() {
-		// TODO: Determine the amount to save each month based on TotalAmountSaved,
-		// YearsToWork
-		// and Annual return while working
 
 		double pmt = (FinanceLib.pmt(dAnnualReturnWorking/12, (iYearsToWork * 12), 0, TotalAmountSaved(), false));
 		if (pmt < 0)
@@ -84,10 +81,7 @@ public class Retirement {
 	}
 
 	public double TotalAmountSaved() {
-		// TODO: Determine amount to be saved based on Monthly SSI, Required Income,
-		// Annual return during retirement
-		// and number of years retired.
-		//
+
 		double pv = (FinanceLib.pv(dAnnualReturnRetired/12, (iYearsRetired * 12), dRequiredIncome - dMonthlySSI, 0, false));
 		if (pv < 0)
 			pv = pv*(-1);
