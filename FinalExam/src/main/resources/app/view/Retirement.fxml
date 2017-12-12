@@ -72,14 +72,14 @@
                   <Insets />
                </GridPane.margin>
             </HBox>
-            <TextField fx:id="txtYearsToWork" prefHeight="25.0" prefWidth="62.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="7" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="8" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="9" />
-            <Label GridPane.columnIndex="1" />
-            <Label GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="YearsToWorkField" prefHeight="25.0" prefWidth="62.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="TopAnnualReturnField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="YearsRetiredField" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="BottomAnnualReturnField" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="RequiredIncomeField" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <TextField fx:id="MonthlySSIField" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Label fx:id="MonthlySavings" GridPane.columnIndex="1" />
+            <Label fx:id="TotalSavings" GridPane.columnIndex="1" GridPane.rowIndex="4" />
          </children>
       </GridPane>
    </center>

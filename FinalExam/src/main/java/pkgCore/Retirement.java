@@ -75,7 +75,11 @@ public class Retirement {
 		// YearsToWork
 		// and Annual return while working
 
-		return (FinanceLib.pmt(dAnnualReturnWorking, (iYearsToWork * 12), 0, TotalAmountSaved(), false));
+		double pmt = (FinanceLib.pmt(dAnnualReturnWorking/12, (iYearsToWork * 12), 0, TotalAmountSaved(), false));
+		if (pmt < 0)
+			pmt = pmt*(-1);
+		pmt = ((double) Math.round(pmt*100))/100;
+		return pmt;
 
 	}
 
@@ -84,7 +88,10 @@ public class Retirement {
 		// Annual return during retirement
 		// and number of years retired.
 		//
-		return (FinanceLib.pv(dAnnualReturnRetired, (iYearsRetired * 12), dRequiredIncome - dMonthlySSI, 0, false));
-
+		double pv = (FinanceLib.pv(dAnnualReturnRetired/12, (iYearsRetired * 12), dRequiredIncome - dMonthlySSI, 0, false));
+		if (pv < 0)
+			pv = pv*(-1);
+		pv = ((double)Math.round(pv*100))/100;
+		return pv;
 	}
 }
