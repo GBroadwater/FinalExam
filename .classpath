@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="FinalExam/src/main/java"/>
+	<classpathentry kind="src" path="FinalExam/src/test/java"/>
+	<classpathentry kind="src" path="FinalExam/src/test/resources"/>
+	<classpathentry kind="lib" path="C:/Users/geoff/Downloads/apache/poi-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/geoff/Downloads/apache/poi-examples-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/geoff/Downloads/apache/poi-excelant-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/geoff/Downloads/apache/poi-ooxml-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/geoff/Downloads/apache/poi-ooxml-schemas-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/geoff/Downloads/apache/poi-scratchpad-3.17.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

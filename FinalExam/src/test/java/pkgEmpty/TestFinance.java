@@ -4,6 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 import org.apache.poi.ss.formula.functions.*;
+
+
 public class TestFinance {
 
 	
@@ -35,7 +37,7 @@ public class TestFinance {
 		boolean t = false;
 		double pv = FinanceLib.pv(r, n, y, f, t);
 		
-		//System.out.println(pv);
+		System.out.println(pv);
 		
 	}
 	
@@ -50,7 +52,7 @@ public class TestFinance {
 		
 		double d = FinanceLib.pmt(r, n, p, f, t);
 		
-		//System.out.println(d);
+		System.out.println(d);
 		
 		
 		
